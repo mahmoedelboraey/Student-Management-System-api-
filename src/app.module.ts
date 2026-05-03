@@ -38,6 +38,7 @@ import { LoggerMiddleware } from "./comman/middleware/logger.middleware";
 })
 export class AppModule
     implements NestModule
+    
 {
     configure(
         consumer: MiddlewareConsumer
