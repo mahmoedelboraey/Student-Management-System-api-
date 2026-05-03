@@ -1,5 +1,4 @@
 import mongoose, { Document, Schema } from "mongoose";
-
 export interface IStudent extends Document {
     firstName: string;
     lastName: string;
@@ -8,7 +7,6 @@ export interface IStudent extends Document {
     createdAt: Date;
     updatedAt: Date;
 }
-
 export const studentSchema = new Schema<IStudent>(
     {
         firstName: {
@@ -41,5 +39,4 @@ export const studentSchema = new Schema<IStudent>(
         timestamps: true,
     }
 );
-
 export const STUDENTS_MODEL = "Student";
